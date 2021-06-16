@@ -1,0 +1,13 @@
+<stringmods>
+<StringTable>
+<Language name="Spanish">
+	<string _locid="300001">Guerrero Xolotl</string>
+	<string _locid="300002" symbol="cStringCivNameGons">Gongondios</string>
+	<string _locid="300003">Camello chairo</string>
+	<string _locid="300004">CAB Camello chairo</string>
+	<string _locid="300005">Espadachin chaquetero</string>
+	<string _locid="300006">Templo Gongondio</string>
+	<string _locid="300007">Cagoaltense</string>
+</Language>
+</StringTable>
+</stringmods>

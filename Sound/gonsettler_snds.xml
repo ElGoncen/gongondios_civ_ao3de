@@ -1,0 +1,119 @@
+<protounitsounddef>
+	<protounit name="Gonsettler">
+		<soundtype name="Select">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="SpanishSettlerMaleSelect">
+					</soundset>
+				</choice>
+				<choice name="1">
+					<soundset name="SpanishSettlerFemaleSelect">
+					</soundset>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Grunt">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleGrunt">
+					</soundset>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericFemaleGrunt">
+					</soundset>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Death">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleDeath">
+					</soundset>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericFemaleDeath">
+					</soundset>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="SettlerBirth"></soundset>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<variationlogic>
+				<choice name="0">
+				<civlogic>
+					<targetlogic>
+						<choice name="default">
+							<soundset name="SpanishSettlerMaleAcknowledge"></soundset>
+						</choice>
+						<choice name="enemy">
+							<soundset name="SpanishSettlerMaleAttack"></soundset>
+						</choice>
+						<choice name="build">
+							<soundset name="SpanishSettlerMaleBuild"></soundset>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="SpanishSettlerMaleGatherMeat"></soundset>
+						</choice>
+						<choice name="Tree">
+							<soundset name="SpanishSettlerMaleGatherWood"></soundset>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="SpanishSettlerMaleGatherCoin"></soundset>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="SpanishSettlerMaleGatherFarm"></soundset>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="SpanishSettlerMaleAcknowledge"></soundset>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="SpanishSettlerMaleGatherFruit"></soundset>
+						</choice>
+						<choice name="Plantation">
+							<soundset name="SpanishSettlerMaleGatherPlantation"></soundset>
+						</choice>
+					</targetlogic>
+					</civlogic>
+				</choice>
+				<choice name="1">
+				<civlogic>
+					<targetlogic>
+						<choice name="default">
+							<soundset name="SpanishSettlerFemaleAcknowledge"></soundset>
+						</choice>
+						<choice name="enemy">
+							<soundset name="SpanishSettlerFemaleAttack"></soundset>
+						</choice>
+						<choice name="build">
+							<soundset name="SpanishSettlerFemaleBuild"></soundset>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="SpanishSettlerFemaleGatherMeat"></soundset>
+						</choice>
+						<choice name="Tree">
+							<soundset name="SpanishSettlerFemaleGatherWood"></soundset>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="SpanishSettlerFemaleGatherCoin"></soundset>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="SpanishSettlerFemaleGatherFarm"></soundset>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="SpanishSettlerFemaleAcknowledge"></soundset>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="SpanishSettlerFemaleGatherFruit"></soundset>
+						</choice>
+						<choice name="Plantation">
+							<soundset name="SpanishSettlerFemaleGatherPlantation"></soundset>
+						</choice>
+					</targetlogic>
+					</civlogic>
+				</choice>
+			</variationlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>
