@@ -1,5 +1,5 @@
 <protounitsounddef>
-	<protounit name="Calgoaltense">
+	<protounit name="Cagoaltense">
 		<soundtype name="Select">
 			<variationlogic>
 				<choice name="0">
@@ -39,77 +39,133 @@
 		<soundtype name="Creation">
 			<soundset name="SettlerBirth"></soundset>
 		</soundtype>
-		<soundtype name="Acknowledge">
-			<variationlogic>
-				<choice name="0">
-					<targetlogic>
-						<choice name="default">
-							<soundset name="DEIncaVillagerMaleAcknowledge"></soundset>
-						</choice>
-						<choice name="enemy">
-							<soundset name="DEIncaVillagerMaleAttack"></soundset>
-						</choice>
-						<choice name="build">
-							<soundset name="DEIncaVillagerMaleBuild"></soundset>
-						</choice>
-						<choice name="Huntable">
-							<soundset name="DEIncaVillagerMaleGatherMeat"></soundset>
-						</choice>
-						<choice name="Tree">
-							<soundset name="DEIncaVillagerMaleGatherWood"></soundset>
-						</choice>
-						<choice name="AbstractMine">
-							<soundset name="DEIncaVillagerMaleGatherCoin"></soundset>
-						</choice>
-						<choice name="AbstractFarm">
-							<soundset name="DEIncaVillagerMaleGatherFarm"></soundset>
-						</choice>
-						<choice name="AbstractResourceCrate">
-							<soundset name="DEIncaVillagerMaleAcknowledge"></soundset>
-						</choice>
-						<choice name="AbstractFruit">
-							<soundset name="DEIncaVillagerMaleGatherFruit"></soundset>
-						</choice>
-						<choice name="Plantation">
-							<soundset name="DEIncaVillagerMaleGatherPlantation"></soundset>
-						</choice>
-					</targetlogic>
-				</choice>
-				<choice name="1">
-					<targetlogic>
-						<choice name="default">
-							<soundset name="DEIncaVillagerFemaleAcknowledge"></soundset>
-						</choice>
-						<choice name="enemy">
-							<soundset name="DEIncaVillagerFemaleAttack"></soundset>
-						</choice>
-						<choice name="build">
-							<soundset name="DEIncaVillagerFemaleBuild"></soundset>
-						</choice>
-						<choice name="Huntable">
-							<soundset name="DEIncaVillagerFemaleGatherMeat"></soundset>
-						</choice>
-						<choice name="Tree">
-							<soundset name="DEIncaVillagerFemaleGatherWood"></soundset>
-						</choice>
-						<choice name="AbstractMine">
-							<soundset name="DEIncaVillagerFemaleGatherCoin"></soundset>
-						</choice>
-						<choice name="AbstractFarm">
-							<soundset name="DEIncaVillagerFemaleGatherFarm"></soundset>
-						</choice>
-						<choice name="AbstractResourceCrate">
-							<soundset name="DEIncaVillagerFemaleAcknowledge"></soundset>
-						</choice>
-						<choice name="AbstractFruit">
-							<soundset name="DEIncaVillagerFemaleGatherFruit"></soundset>
-						</choice>
-						<choice name="Plantation">
-							<soundset name="DEIncaVillagerFemaleGatherPlantation"></soundset>
-						</choice>
-					</targetlogic>
-				</choice>
-			</variationlogic>
-		</soundtype>
+		
+<soundtype name="Acknowledge">
+
+
+      <variationlogic>
+        <choice name="0">
+		
+		<civlogic>
+            <choice name="Nature">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+			
+			
+            <choice name="Gongondios">
+              <targetlogic>
+			    <choice name="default">
+                  <soundset name="DEIncaVillagerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="DEIncaVillagerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="DEIncaVillagerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="DEIncaVillagerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="DEIncaVillagerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="DEIncaVillagerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="AbstractMine">
+                  <soundset name="DEIncaVillagerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractResourceCrate">
+                  <soundset name="DEIncaVillagerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFruit">
+                  <soundset name="DEIncaVillagerMaleGatherFruit">
+                  </soundset>
+				  
+				  
+                </choice>
+              </targetlogic>
+			  </choice>
+			  </civlogic>
+            </choice>
+			
+			
+		<choice name="1">
+		
+          <civlogic>
+            <choice name="Nature">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+			
+            <choice name="Gongondios">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="DEIncaVillagerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="DEIncaVillagerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="DEIncaVillagerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="DEIncaVillagerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="DEIncaVillagerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="DEIncaVillagerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="AbstractMine">
+                  <soundset name="DEIncaVillagerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractResourceCrate">
+                  <soundset name="DEIncaVillagerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFruit">
+                  <soundset name="DEIncaVillagerFemaleGatherFruit">
+                  </soundset>
+				  
+				  
+                </choice>
+              </targetlogic>
+			  </choice>
+			  </civlogic>
+            </choice>
+			
+			
+			</variationlogic>			
+       		</soundtype>
+			
 	</protounit>
 </protounitsounddef>
+
+
+
