@@ -1,7 +1,7 @@
 <homecity>
   <civ>Gongondios</civ>
-  <name>$$300002$$</name>
-  <heroname>$$300014$$</heroname>
+  <name>$$300008$$</name>
+  <heroname>$$300009$$</heroname>
   <gatherpointunit>HomeCityGatherFlag</gatherpointunit>
   <visual>british\british_homecity.xml</visual>
   <watervisual>british\british_homecity_water.xml</watervisual>

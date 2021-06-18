@@ -671,4 +671,96 @@
 <train row="0" page="0" column="0">Miner</train>
 </unit>
 
+
+
+
+
+
+
+
+
+<unit id="2003" name="GonPriest">
+    <dbid>41</dbid>
+    <displaynameid>22954</displaynameid>
+    <editornameid>27773</editornameid>
+    <populationcount>1</populationcount>
+    <obstructionradiusx>0.4900</obstructionradiusx>
+    <obstructionradiusz>0.4900</obstructionradiusz>
+    <formationcategory>Protected</formationcategory>
+    <maxvelocity>4.0000</maxvelocity>
+    <maxrunvelocity>6.0000</maxrunvelocity>
+    <movementtype>land</movementtype>
+    <turnrate>18.0000</turnrate>
+    <animfile>units\priests\priest.xml</animfile>
+    <impacttype>Flesh</impacttype>
+    <physicsinfo>dude</physicsinfo>
+    <icon>resources\art\units\priests\we_priest_icon_64x64.png</icon>
+    <portraiticon>resources\art\units\priests\we_priest_portrait.png</portraiticon>
+    <rollovertextid>22953</rollovertextid>
+    <shortrollovertextid>25698</shortrollovertextid>
+    <initialhitpoints>360.0000</initialhitpoints>
+    <maxhitpoints>360.0000</maxhitpoints>
+    <los>12.0000</los>
+    <unitaitype>HandCombative</unitaitype>
+    <trainpoints>30.0000</trainpoints>
+    <buildlimit>30</buildlimit>
+    <bounty>15.0000</bounty>
+    <buildbounty>15.0000</buildbounty>
+    <cost resourcetype="Gold">150.0000</cost>
+    <allowedage>1</allowedage>
+    <armor type="Ranged" value="0.1000">
+    </armor>
+    <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+    <unittype>LogicalTypeHealed</unittype>
+    <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+    <unittype>LogicalTypeGarrisonInShips</unittype>
+    <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+    <unittype>LogicalTypeVillagersAttack</unittype>
+    <unittype>LogicalTypeHandUnitsAttack</unittype>
+    <unittype>LogicalTypeRangedUnitsAttack</unittype>
+    <unittype>Military</unittype>
+    <unittype>UnitClass</unittype>
+    <unittype>Unit</unittype>
+    <unittype>HasBountyValue</unittype>
+    <unittype>CountsTowardMilitaryScore</unittype>
+    <unittype>ConvertsHerds</unittype>
+    <unittype>CannotConvertHill</unittype>
+    <unittype>AbstractHealer</unittype>
+    <unittype>AbstractFindHealer</unittype>
+    <flag>CollidesWithProjectiles</flag>
+    <flag>ApplyHandicapTraining</flag>
+    <flag>CorpseDecays</flag>
+    <flag>ShowGarrisonButton</flag>
+    <flag>DontRotateObstruction</flag>
+    <flag>ObscuredByUnits</flag>
+    <flag>CanAutoHeal</flag>
+    <flag>Tracked</flag>
+    <command page="11" column="0">Abilities</command>
+    <command page="10" column="1">Stop</command>
+    <command page="10" column="0">Garrison</command>
+    <command page="10" column="7">Delete</command>
+    <tactics>healer.tactics</tactics>
+    <protoaction>
+      <name>HandAttack</name>
+      <damage>5.000000</damage>
+      <damagetype>Hand</damagetype>
+      <rof>1.500000</rof>
+    </protoaction>
+    <protoaction>
+      <name>Heal</name>
+      <type>Heal</type>
+      <rate type="LogicalTypeHealed">10.000000</rate>
+    </protoaction>
+		<protoaction>
+      <name>Convert</name>
+      <maxrange>12.000000</maxrange>
+      <rate type="Unit">1.000000</rate>
+    </protoaction>
+	
+  </unit>
+
+
+ <unit id="301" name="Church">
+<train row="0" page="0" column="0">GonPriest</train>
+</unit>
 </protomods>

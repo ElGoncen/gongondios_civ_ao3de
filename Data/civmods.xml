@@ -8,12 +8,12 @@
   <civ>
  <name>Gongondios</name>
     <main>1</main>
-    <statsid>BR</statsid>
+    <statsid>GN</statsid>
     <portrait>objects\flags\gongondios</portrait>
     <culture>WesternEurope</culture>
-    <settlerprotoname>Settler</settlerprotoname>
+    <settlerprotoname>GonSettler</settlerprotoname>
     <displaynameid>300002</displaynameid>
-    <rollovernameid>26060</rollovernameid>
+    <rollovernameid>300010</rollovernameid>
     <alliedid>26446</alliedid>
     <alliedotherid>26445</alliedotherid>
     <unalliedid>26444</unalliedid>
@@ -64,8 +64,8 @@
     <homecityflagiconwpf>resources/images/icons/flags/Flag_Gongondios.png</homecityflagiconwpf>
     <homecitypreviewwpf>resources/images/icons/history/histories/h_pc_gongondios.png</homecitypreviewwpf>
     <homecityflagbuttonwpf>resources\images\icons\flags\flag_hc_gongondios.png</homecityflagbuttonwpf>
-    <homecityflagbuttonset>britishFlagBtn</homecityflagbuttonset>
-    <homecityflagbuttonsetlarge>britishFlagBtnLarge</homecityflagbuttonsetlarge>
+    <homecityflagbuttonset>gongondiosFlagBtn</homecityflagbuttonset>
+    <homecityflagbuttonsetlarge>gongondiosFlagBtnLarge</homecityflagbuttonsetlarge>
     <postgameflagtexture>ui\ingame\ingame_ui_postgame_flag_gongondios</postgameflagtexture>
     <postgameflagiconwpf>resources/images/icons/flags/postgame_flag_gongondios.png</postgameflagiconwpf>
     <matchmakingtextures>

@@ -60,10 +60,7 @@
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">Miner</target>
       </effect>
-	  <effect type="Data" amount="1.00" subtype="AddTrain" unittype="Miner" relativity="Absolute">
-        <target type="ProtoUnit">TownCenter</target>
-		</effect>
-				
+	  				
       <effect type="TechStatus" status="obtainable">GuardPikemen</effect>
       <effect type="TechStatus" status="obtainable">GuardSkirmishers</effect>
       <effect type="TechStatus" status="obtainable">ImperialPikemen</effect>
@@ -214,7 +211,7 @@
 		  <effect type="SetName" proto="Church" newname="300006">
       </effect>
 		  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">dePriestess</target>
+        <target type="ProtoUnit">Missionary</target>
       </effect>
       <effect type="Data" amount="1.00" subtype="AddTrain" unittype="dePriestess" relativity="Absolute">
         <target type="ProtoUnit">Church</target>
@@ -234,7 +231,7 @@
         <target type="ProtoUnit">FishingBoat</target>
       </effect>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">Priest</target>
+        <target type="ProtoUnit">GonPriest</target>
 		</effect>
 		<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">Culverin</target>
