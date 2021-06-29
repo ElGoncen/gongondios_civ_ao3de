@@ -1,0 +1,53 @@
+<tactics>
+  <action>
+    <name stringid="38134">HandAttack</name>
+    <type>HandAttack</type>
+    <maxrange>1.0</maxrange>
+    <rate type="Unit">1.0 </rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <anim>Attack</anim>
+    <impacteffect>effects\impacts\melee</impacteffect>
+  </action>
+  <action>
+    <name stringid="91782">HandAttackCrate</name>
+    <type>HandAttack</type>
+    <active>0</active>
+    <maxrange>1.0</maxrange>
+    <rate type="AbstractInfiniteCrate">1.0 </rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <anim>GatherCrateAttack</anim>
+    <impacteffect>effects\impacts\melee</impacteffect>
+    <hidefromstats>1</hidefromstats>
+  </action>
+  <action>
+    <name stringid="69155">Heal</name>
+    <type>Heal</type>
+    <maxrange>12</maxrange>
+    <rate type="LogicalTypeHealed">5.0 </rate>
+    <anim>Heal</anim>
+  </action>
+ <action>
+    <name stringid="69155">Convert</name>
+    <type>Convert</type>
+    <active>1</active>
+    <maxrange>12</maxrange>
+    <anim>Convert</anim>
+    <rof>1.000000</rof>
+    <conversiondelay>6.000000</conversiondelay>
+  </action>
+  
+  <action>
+    <name stringid="48958">ExtraDamage</name>
+    <type>AutoRangedModify</type>
+    <active>0</active>
+    <maxrange>24</maxrange>
+    <persistent>1</persistent>
+    <modifytype>Damage</modifytype>
+    <modifymultiplier>1.045</modifymultiplier>
+    <modelattachment>effects\chiefpower\chiefpower.xml</modelattachment>
+    <modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+  </action>
+  <tactic>Normal<action>HandAttack</action><action>Heal</action><action>Convert</action><action>ExtraDamage</action><attacktype>LogicalTypeHandUnitsAttack</attacktype><runaway>1</runaway><autoretarget>1</autoretarget></tactic>
+</tactics>
