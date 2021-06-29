@@ -95,6 +95,40 @@
         <count>6</count>
       </unitcounts>
     </multipleblocktrain>
+	
+	<multipleblocktrain>
+      <building>Capitol</building>
+      <multipleblockunit>deStateCapitolTrainTradingPostWagon</multipleblockunit>
+      <units>
+        <unit>deTradingPostWagon</unit>
+      </units>
+      <unitcounts>
+        <count>1</count>
+      </unitcounts>
+    </multipleblocktrain>
+	
+	<multipleblocktrain>
+      <building>Capitol</building>
+      <multipleblockunit>deStateCapitolTrainOutpostWagon</multipleblockunit>
+      <units>
+        <unit>OutpostWagon</unit>
+      </units>
+      <unitcounts>
+        <count>1</count>
+      </unitcounts>
+    </multipleblocktrain>
+	<multipleblocktrain>
+      <building>Capitol</building>
+      <multipleblockunit>deStateCapitolTrainPlantationWagon</multipleblockunit>
+      <units>
+        <unit>dePlantationWagon</unit>
+      </units>
+      <unitcounts>
+        <count>1</count>
+      </unitcounts>
+    </multipleblocktrain>
+	
+	
   </civ>
   
   

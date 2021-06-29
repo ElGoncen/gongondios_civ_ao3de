@@ -2,7 +2,7 @@
   <unit id="2001" name="Cagoaltense">
     <dbid>1</dbid>
     <displaynameid>300007</displaynameid>
-    <editornameid>34132</editornameid>
+    <editornameid>300013</editornameid>
     <populationcount>1</populationcount>
     <obstructionradiusx>0.4900</obstructionradiusx>
     <obstructionradiusz>0.4900</obstructionradiusz>
@@ -67,6 +67,7 @@
 	<train row="0" page="6" column="9">Bank</train>
 	<train row="0" page="6" column="2">Market</train>
     <train row="0" page="6" column="0">CommunityPlaza</train>
+	<train row="0" page="6" column="7">TradingPost</train>
     <train row="0" page="6" column="11">WarHut</train>
     <train row="0" page="6" column="6">deBlockhouse</train>
     <train row="0" page="255" column="0">ypWJGiantBuddha2</train>
@@ -325,8 +326,8 @@
   
  <unit id="2002" name="Gonsettler">
   <dbid>1</dbid>
-  <displaynameid>22806</displaynameid>
-  <editornameid>34132</editornameid>
+  <displaynameid>300014</displaynameid>
+  <editornameid>300012</editornameid>
   <populationcount>1</populationcount>
   <obstructionradiusx>0.4900</obstructionradiusx>
   <obstructionradiusz>0.4900</obstructionradiusz>
@@ -391,7 +392,6 @@
   <train row="0" page="6" column="0">House</train>
   <train row="0" page="6" column="0">deTorp</train>
   <train row="0" page="6" column="18">TownCenter</train>
-  <train row="0" page="6" column="19">NativeEmbassy</train>
   <train row="0" page="6" column="16">Saloon</train>
   <train row="0" page="6" column="16">deTavern</train>
   <train row="0" page="6" column="0">CommunityPlaza</train>
@@ -406,9 +406,7 @@
   <train row="0" page="6" column="5">Dock</train>
   <train row="0" page="6" column="6">Outpost</train>
   <train row="0" page="6" column="6">Blockhouse</train>
-  <train row="0" page="6" column="7">TradingPost</train>
   <train row="0" page="6" column="8">WallConnector</train>
-
   <train row="0" page="6" column="10">Church</train>
   <train row="0" page="6" column="11">WarHut</train>
   <train row="0" page="6" column="11">Barracks</train>
@@ -681,8 +679,8 @@
 
 <unit id="2003" name="GonPriest">
     <dbid>41</dbid>
-    <displaynameid>22954</displaynameid>
-    <editornameid>27773</editornameid>
+    <displaynameid>300015</displaynameid>
+    <editornameid>300016</editornameid>
     <populationcount>1</populationcount>
     <obstructionradiusx>0.4900</obstructionradiusx>
     <obstructionradiusz>0.4900</obstructionradiusz>
@@ -691,7 +689,7 @@
     <maxrunvelocity>6.0000</maxrunvelocity>
     <movementtype>land</movementtype>
     <turnrate>18.0000</turnrate>
-    <animfile>units\priests\priest.xml</animfile>
+    <animfile>units\priests\gonpriest.xml</animfile>
     <impacttype>Flesh</impacttype>
     <physicsinfo>dude</physicsinfo>
     <icon>resources\art\units\priests\we_priest_icon_64x64.png</icon>
@@ -739,7 +737,7 @@
     <command page="10" column="1">Stop</command>
     <command page="10" column="0">Garrison</command>
     <command page="10" column="7">Delete</command>
-    <tactics>healer.tactics</tactics>
+    <tactics>gonpriest.tactics</tactics>
     <protoaction>
       <name>HandAttack</name>
       <damage>5.000000</damage>
@@ -762,5 +760,10 @@
 
  <unit id="301" name="Church">
 <train row="0" page="0" column="0">GonPriest</train>
+</unit>
+
+
+<unit id="296" name="Barracks">
+<tech row="0" page="1" column="1">BoneChaqueteroElite</tech>
 </unit>
 </protomods>

@@ -116,6 +116,7 @@
       </effect>
       <effect type="TechStatus" status="obtainable">GuardDragoons</effect>
       <effect type="TechStatus" status="obtainable">VeteranPikemen</effect>
+	  <effect type="TechStatus" status="obtainable">BoneChaqueteroElite</effect>
       <effect type="TechStatus" status="obtainable">VeteranCrossbowmen</effect>
       <effect type="TechStatus" status="obtainable">ImperialCrossbowmen</effect>
       <effect type="TechStatus" status="obtainable">GuardCrossbowmen</effect>
@@ -280,7 +281,7 @@
       <effect type="TechStatus" status="obtainable">ImperialManOWar</effect>
       <effect type="TechStatus" status="obtainable">ImperialMonitors</effect>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">deTavern</target>
+        <target type="ProtoUnit">Saloon</target>
       </effect>
      
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
@@ -294,9 +295,10 @@
       </effect>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">xpSpy</target>
+		</effect>
 	
 		
-      </effect>
+      
       <effect type="TechStatus" status="obtainable">ShipHowitzers</effect>
       <effect type="TechStatus" status="obtainable">PoliticianGovernor</effect>
       <effect type="TechStatus" status="obtainable">DEPoliticianLogisticianColonialBritish</effect>
@@ -485,4 +487,137 @@
       </effect>
     </effects>
   </tech>
+  
+  <tech name="HCShipGonSettlers1" type="Normal">
+    <dbid>9008</dbid>
+    <displaynameid>35652</displaynameid>
+    <cost resourcetype="Ships">1.0000</cost>
+    <researchpoints>40.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\images\icons\techs\infinite_settler.png</icon>
+    <flag>HomeCity</flag>
+    <effects>
+      <effect type="Data" amount="2.00" subtype="FreeHomeCityUnit" unittype="GonSettler" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect tech="ypFreeCoinCrate400Age1" type="Data" amount="1.00" subtype="FreeHomeCityUnitIfTechObtainable" unittype="deCrateSpanishGold" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect tech="deSpanishLogisticianShadow" type="Data" amount="200.00" subtype="ResourceIfTechObtainable" resource="Food" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect tech="deSpanishLogisticianShadow" type="Data" amount="100.00" subtype="ResourceIfTechObtainable" resource="Wood" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect tech="deSpanishLogisticianShadow" type="Data" amount="100.00" subtype="ResourceIfTechObtainable" resource="Gold" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect tech="deAddFree400CoinToInventory" type="Data" amount="400.00" subtype="ResourceIfTechObtainable" resource="Gold" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+    </effects>
+  </tech>
+  
+  <tech name="BoneChaqueteroElite" type="Normal">
+    <dbid>9009</dbid>
+    <displaynameid>300011</displaynameid>
+    <cost resourcetype="Food">700.0000</cost>
+    <cost resourcetype="Gold">400.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\images\icons\techs\veteran_spear_infantry\veteran_spear_infantry.png</icon>
+    <rollovertextid>23056</rollovertextid>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>UpgradeTech</flag>
+    <prereqs>
+      <techstatus status="Active">Fortressize</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Boneguard</target>
+      </effect>
+      <effect type="Data" amount="1.50" subtype="Damage" allactions="1" relativity="BasePercent">
+        <target type="ProtoUnit">Boneguard</target>
+      </effect>
+      <effect type="SetName" proto="Boneguard" culture="none" newname="300017">
+      </effect>
+      <effect type="Data" amount="0.00" subtype="UpdateVisual" unittype="Boneguard" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+    </effects>
+  </tech>
+  
+  <tech name="DEEliteInca" type="Normal">
+  <prereqs>
+      <techstatus status="Active">Fortressize</techstatus>
+    </prereqs>
+  <effect type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+      <effect type="Data" amount="3.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+      <effect type="Data" action="Convert" amount="3.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+      <effect type="Data" action="Convert" amount="-1.00" subtype="ConversionDelay" relativity="Absolute">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+    </tech>
+  <tech name="DEChampionInca" type="Normal">
+  <prereqs>
+      <techstatus status="Active">Industrialize</techstatus>
+    </prereqs>
+  <effect type="Data" amount="1.40" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+      <effect type="Data" amount="3.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+      <effect type="Data" action="Convert" amount="3.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+      <effect type="Data" action="Convert" amount="-1.00" subtype="ConversionDelay" relativity="Absolute">
+        <target type="ProtoUnit">GonPriest</target>
+      </effect>
+  
+  </tech>
+  <tech name="TribalIncaWisewoman2" type="Normal">
+  <effects>
+      <effect type="SetAge">Age1</effect>
+      <effect type="TechStatus" status="unobtainable">TribalIncaWisewoman5</effect>
+      <effect type="TechStatus" status="unobtainable">TribalIncaWisewoman4</effect>
+      <effect type="TechStatus" status="unobtainable">TribalIncaWisewoman3</effect>
+      <effect type="Data" amount="3.00" subtype="FreeHomeCityUnit" unittype="GonPriest" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+    </effects>
+  </tech>
+  
+  <tech name="TribalIncaWisewoman4" type="Normal">
+  
+  <effects>
+      <effect type="SetAge">Age4</effect>
+      <effect type="Data" amount="4.00" subtype="FreeHomeCityUnit" unittype="GonPriest" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+      <effect type="Data" amount="2.00" subtype="FreeHomeCityUnit" unittype="CrateofWoodLarge" relativity="Absolute">
+        <target type="Player">
+        </target>
+      </effect>
+    </effects>
+    
+  </tech>
+  
+  
+  
 </techtreemods>
