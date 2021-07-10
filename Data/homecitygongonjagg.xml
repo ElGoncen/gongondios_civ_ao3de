@@ -46,8 +46,29 @@
       <prereqtech>HCRoyalMintGerman</prereqtech>
       <age>0</age>
 	  </card>
-    <card>
-      <name>HCShipSettlers1</name>
+	  <card>
+	  <name>DEHCAdvancedSaloon</name>
+      <maxcount>1</maxcount>
+      <level>0</level>
+      <prereqtech>HCRoyalMintGerman</prereqtech>
+      <age>0</age>
+	  </card>
+	  <card>
+      <name>HCShipBuildsx2</name>
+      <maxcount>1</maxcount>
+      <level>0</level>
+      <prereqtech>-1</prereqtech>
+      <age>2</age>
+       </card>
+	   <card>
+	   <name>HCShipDesgunzadorElite</name>
+      <maxcount>1</maxcount>
+      <level>0</level>
+      <prereqtech>-1</prereqtech>
+      <age>3</age>
+       </card>
+	  <card>
+      <name>HCShipGonSettlers1</name>
       <maxcount>-1</maxcount>
       <level>0</level>
       <prereqtech>-1</prereqtech>
@@ -59,7 +80,7 @@
       <name>HCShipSettlers2</name>
       <maxcount>1</maxcount>
       <level>0</level>
-      <prereqtech>HCShipSettlers1</prereqtech>
+      <prereqtech>HCShipGonSettlers1</prereqtech>
       <age>1</age>
       <displayunitcount>4</displayunitcount>
       <infiniteinlastage>1</infiniteinlastage>
@@ -1769,7 +1790,10 @@
     <rolloverstringid>25536</rolloverstringid>
     <obtainabletechs>
 	  <tech x="2.7" y="6.0">HCXPCapitalism</tech>
-      <tech x="0.9" y="1.0">HCShipSettlers1</tech>
+	  <tech x="6.7" y="4.0">DEHCAdvancedSaloon</tech>
+	  <tech x="0.9" y="1.0">HCShipBuildsx2</tech>
+      <tech x="0.9" y="1.0">HCShipGonSettlers1</tech>
+	  <tech x="0.9" y="1.0">HCShipDesgunzadorElite</tech>
       <tech x="0.9" y="2.0">HCShipSettlers2</tech>
       <tech x="0.9" y="3.0">HCShipSettlers3</tech>
       <tech x="0.9" y="4.0">HCShipSettlers4</tech>
@@ -1801,7 +1825,10 @@
     </obtainabletechs>
     <activetechs>
 	  <tech x="2.7" y="6.0">HCXPCapitalism</tech>
-      <tech x="0.9" y="1.0">HCShipSettlers1</tech>
+	  <tech x="6.7" y="4.0">DEHCAdvancedSaloon</tech>
+	  <tech x="0.9" y="1.0">HCShipGonSettlers1</tech>
+	  <tech x="0.9" y="1.0">HCShipBuildsx2</tech>
+	  <tech x="0.9" y="1.0">HCShipDesgunzadorElite</tech>
       <tech x="0.9" y="2.0">HCShipSettlers2</tech>
       <tech x="0.9" y="3.0">HCShipSettlers3</tech>
       <tech x="0.9" y="4.0">HCShipSettlers4</tech>

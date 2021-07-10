@@ -69,6 +69,8 @@
       <effect type="TechStatus" status="active">AAStandardStartingTechs</effect>
       <effect type="TechStatus" status="active">DEEuropeanStandardTechs</effect>
       <effect type="TechStatus" status="active">DEGrenadierEnable</effect>
+	  <effect type="TechStatus" status="active">GongondiosTec</effect>
+	  
       <effect type="SetName" tech="DEHCHandMortar" newname="91787" newrollover="91786">
       </effect>
        <effect type="TechStatus" status="obtainable">VeteranHussars</effect>
@@ -134,19 +136,62 @@
       <effect type="TechStatus" status="obtainable">YPExaltedHowdah</effect>
 	  <effect type="TechStatus" status="obtainable">YPHonoredMahout</effect>
       <effect type="TechStatus" status="obtainable">YPExaltedMahout</effect>
-	  <effect type="TechStatus" status="obtainable">YPHonoredSiegeElephant</effect>
-      <effect type="TechStatus" status="obtainable">YPExaltedSiegeElephant</effect>
 	  <effect type="TechStatus" status="obtainable">YPExaltedFlailElephant</effect>
-      <effect type="TechStatus" status="obtainable">YPHonoredFlailElephant</effect>
+      <effect type="TechStatus" status="obtainable">YPExaltedSiegeElephant</effect>
+	  <effect type="TechStatus" status="obtainable">YPHonoredFlailElephant</effect>
+      <effect type="TechStatus" status="obtainable">YPDisciplinedFlailElephant</effect>
+	  <effect type="TechStatus" status="obtainable">YPHonoredSiegeElephant</effect>
+	  <effect type="TechStatus" status="obtainable">ypFortifiedCastle</effect>
+	  <effect type="TechStatus" status="obtainable">ypFrontierCastle</effect>
        <effect type="SetName" proto="Boneguard" newname="300005">
       </effect>
 	   <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">Capitol</target>
       </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deStateCapitolTrainCoveredWagon</target>
+	   </effect>
+	   <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deStateCapitolTrainCoveredWagon" relativity="Absolute">
+        <target type="ProtoUnit">Capitol</target>
+		</effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deStateCapitolTrainMillWagon</target>
+      </effect>
+       <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deStateCapitolTrainMillWagon" relativity="Absolute">
+        <target type="ProtoUnit">Capitol</target>
+		</effect>
+	  
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deStateCapitolTrainPlantationWagon</target>
+      </effect>
+	 <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deStateCapitolTrainPlantationWagon" relativity="Absolute">
+        <target type="ProtoUnit">Capitol</target>
+		</effect>
+	  
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deStateCapitolTrainTradingPostWagon</target>
+      </effect>
+<effect type="Data" amount="1.00" subtype="AddTrain" unittype="deStateCapitolTrainTradingPostWagon" relativity="Absolute">
+        <target type="ProtoUnit">Capitol</target>
+		</effect>	 
+
+
+	 
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deStateCapitolTrainOutpostWagon</target>
+      </effect>
+	  <effect type="Data" amount="1.00" subtype="AddTrain" unittype="deStateCapitolTrainOutpostWagon" relativity="Absolute">
+        <target type="ProtoUnit">Capitol</target>
+		</effect>	 
+	  
+	  
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">Falconet</target>
       </effect>
-      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">GreatBombard</target>
+      </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">ArtilleryDepot</target>
       </effect>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
@@ -235,6 +280,9 @@
         <target type="ProtoUnit">GonPriest</target>
 		</effect>
 		<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">Desguanzador</target>
+		</effect>
+		<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">Culverin</target>
       </effect>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
@@ -268,9 +316,7 @@
       <effect type="TechStatus" status="obtainable">Bayonet</effect>
       <effect type="TechStatus" status="active">Levy</effect>
       
-	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">Factory</target>
-      </effect>
+	  
 	  <effect type="Data" action="SpawnRocket" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Factory</target>
       </effect>
@@ -283,6 +329,28 @@
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">Saloon</target>
       </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">MercNinja</target>
+      </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deREVVaquero</target>
+      </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">MercRonin</target>
+      </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">MercMameluke</target>
+      </effect>
+	  <effect type="Data" amount="1.00" subtype="AddTrain" unittype="ypHCJapaneseSamurai" relativity="Absolute">
+        <target type="ProtoUnit">Saloon</target>
+		</effect>
+		<effect type="Data" amount="1.00" subtype="AddTrain" unittype="deREVVaquero" relativity="Absolute">
+        <target type="ProtoUnit">Saloon</target>
+		</effect>
+	    <effect type="Data" amount="1.00" subtype="AddTrain" unittype="MercMameluke" relativity="Absolute">
+        <target type="ProtoUnit">Saloon</target>
+		</effect>
+	  
      
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">xpPetard</target>
@@ -293,6 +361,12 @@
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">xpHorseArtillery</target>
       </effect>
+	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">SPCHoopThrowers2</target>
+      </effect>
+	  
+	  
+	  
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">xpSpy</target>
 		</effect>
@@ -323,6 +397,12 @@
 	  </effects>
 		
 	  </tech>
+  
+  
+  
+  
+  
+  
   
      <tech name="GonDisciplinedCamelChairo" type="Normal">
     <dbid>9001</dbid>
@@ -554,6 +634,73 @@
     </effects>
   </tech>
   
+  
+  <tech name="HCShipDesgunzadorElite" type="Normal">
+    <dbid>9010</dbid>
+    <displaynameid>300021</displaynameid>
+    <cost resourcetype="Ships">1.0000</cost>
+    <researchpoints>40.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\art\units\asians\natives\conquistador\conquistador_icon_64.png</icon>
+    <flag>HomeCity</flag>
+    <effects>
+       <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Desguanzador</target>
+      </effect>
+      <effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="BasePercent">
+        <target type="ProtoUnit">Desguanzador</target>
+      </effect>
+      <effect type="SetName" proto="Desguanzador" culture="none" newname="300022">
+      </effect>
+     
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Desguanzador</target>
+      </effect>
+      <effect type="Data" amount="1.25" subtype="Damage" allactions="1" relativity="BasePercent">
+        <target type="ProtoUnit">Desguanzador</target>
+      </effect>
+    </effects>
+   
+  </tech>  
+  
+  <tech name="HCShipBuildsx2" type="Normal">
+    <dbid>9011</dbid>
+    <displaynameid>300023</displaynameid>
+    <cost resourcetype="Ships">1.0000</cost>
+    <researchpoints>40.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\art\buildings\outpost\outpost_icon_64x64.png</icon>
+    <flag>HomeCity</flag>
+    <effects>
+       <effect type="Data" amount="50.00" subtype="BuildLimit" relativity="Absolute">
+        <target type="ProtoUnit">Outpost</target>
+      </effect>
+     <effect type="Data" amount="50.00" subtype="BuildLimit" relativity="Absolute">
+        <target type="ProtoUnit">ypCastle</target>
+      </effect>
+    </effects>
+   
+  </tech>  
+  
+  
+   <tech name="GongondiosTec" type="Normal">
+    <dbid>9012</dbid>
+    <displaynameid>300024</displaynameid>
+    <status>UNOBTAINABLE</status>
+    <flag>Shadow</flag>
+    <effects>
+      
+      
+     <effect type="Data" amount="2.00" subtype="BuildLimit" relativity="Absolute">
+        <target type="ProtoUnit">Church</target>
+      </effect>
+
+
+    </effects>
+
+</tech>
+  
+  
   <tech name="DEEliteInca" type="Normal">
   <prereqs>
       <techstatus status="Active">Fortressize</techstatus>
@@ -618,6 +765,6 @@
     
   </tech>
   
-  
+
   
 </techtreemods>
