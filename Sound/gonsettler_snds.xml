@@ -1,52 +1,49 @@
 <protounitsounddef>
-	<protounit name="Gonsettler">
-		<soundtype name="Select">
-			<variationlogic>
-				<choice name="0">
-					<soundset name="SpanishSettlerMaleSelect">
-					</soundset>
-				</choice>
-				<choice name="1">
-					<soundset name="SpanishSettlerFemaleSelect">
-					</soundset>
-				</choice>
-			</variationlogic>
-		</soundtype>
-		<soundtype name="Grunt">
-			<variationlogic>
-				<choice name="0">
-					<soundset name="GenericMaleGrunt">
-					</soundset>
-				</choice>
-				<choice name="1">
-					<soundset name="GenericFemaleGrunt">
-					</soundset>
-				</choice>
-			</variationlogic>
-		</soundtype>
-		<soundtype name="Death">
-			<variationlogic>
-				<choice name="0">
-					<soundset name="GenericMaleDeath">
-					</soundset>
-				</choice>
-				<choice name="1">
-					<soundset name="GenericFemaleDeath">
-					</soundset>
-				</choice>
-			</variationlogic>
-		</soundtype>
-		<soundtype name="Creation">
-			<soundset name="SettlerBirth"></soundset>
-		</soundtype>
-		
-<soundtype name="Acknowledge">
-
-
+  <protounit name="Gonsettler">
+    <soundtype name="Select">
       <variationlogic>
         <choice name="0">
-		
-		<civlogic>
+          <soundset name="SpanishSettlerMaleSelect">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="SpanishSettlerFemaleSelect">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Grunt">
+      <variationlogic>
+        <choice name="0">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="GenericFemaleGrunt">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Death">
+      <variationlogic>
+        <choice name="0">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="GenericFemaleDeath">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="SettlerBirth">
+      </soundset>
+    </soundtype>
+    <soundtype name="Acknowledge">
+      <variationlogic>
+        <choice name="0">
+          <civlogic>
             <choice name="Nature">
               <targetlogic>
                 <choice name="default">
@@ -55,11 +52,9 @@
                 </choice>
               </targetlogic>
             </choice>
-			
-			
             <choice name="Gongondios">
               <targetlogic>
-			    <choice name="default">
+                <choice name="default">
                   <soundset name="SpanishSettlerMaleAcknowledge">
                   </soundset>
                 </choice>
@@ -94,17 +89,12 @@
                 <choice name="AbstractFruit">
                   <soundset name="SpanishSettlerMaleGatherFruit">
                   </soundset>
-				  
-				  
                 </choice>
               </targetlogic>
-			  </choice>
-			  </civlogic>
             </choice>
-			
-			
-		<choice name="1">
-		
+          </civlogic>
+        </choice>
+        <choice name="1">
           <civlogic>
             <choice name="Nature">
               <targetlogic>
@@ -114,7 +104,6 @@
                 </choice>
               </targetlogic>
             </choice>
-			
             <choice name="Gongondios">
               <targetlogic>
                 <choice name="default">
@@ -152,20 +141,12 @@
                 <choice name="AbstractFruit">
                   <soundset name="SpanishSettlerFemaleGatherFruit">
                   </soundset>
-				  
-				  
                 </choice>
               </targetlogic>
-			  </choice>
-			  </civlogic>
             </choice>
-			
-			
-			</variationlogic>			
-       		</soundtype>
-			
-	</protounit>
+          </civlogic>
+        </choice>
+      </variationlogic>
+    </soundtype>
+  </protounit>
 </protounitsounddef>
-
-
-

@@ -1,9 +1,5 @@
 <civmods>
-  <subcivalliancecost>
-    <gold>0</gold>
-  </subcivalliancecost>
-  <subcivalliancecostfactor>2.0</subcivalliancecostfactor>
-  <maxdecksize>35</maxdecksize>
+  
    
   <civ>
  <name>Gongondios</name>
@@ -23,19 +19,19 @@
     </agetech>
     <agetech>
       <age>Age1</age>
-      <tech>ColonializeBritish</tech>
+      <tech>ColonializeGons</tech>
     </agetech>
     <agetech>
       <age>Age2</age>
-      <tech>FortressizeBritish</tech>
+      <tech>FortressizeGons</tech>
     </agetech>
     <agetech>
       <age>Age3</age>
-      <tech>IndustrializeBritish</tech>
+      <tech>IndustrializeGons</tech>
     </agetech>
     <agetech>
       <age>Age4</age>
-      <tech>ImperializeBritish</tech>
+      <tech>ImperializeGons</tech>
     </agetech>
     <postindustrialtech>PostIndustrialBritish</postindustrialtech>
     <postimperialtech>PostImperialBritish</postimperialtech>
@@ -119,6 +115,16 @@
     </multipleblocktrain>
 	<multipleblocktrain>
       <building>Capitol</building>
+      <multipleblockunit>deStateCapitolTrainWarWagon</multipleblockunit>
+      <units>
+        <unit>GonWarWagon</unit>
+      </units>
+      <unitcounts>
+        <count>1</count>
+      </unitcounts>
+    </multipleblocktrain>
+	<multipleblocktrain>
+      <building>Capitol</building>
       <multipleblockunit>deStateCapitolTrainPlantationWagon</multipleblockunit>
       <units>
         <unit>dePlantationWagon</unit>
@@ -127,7 +133,16 @@
         <count>1</count>
       </unitcounts>
     </multipleblocktrain>
-	
+	<multipleblocktrain>
+      <building>Capitol</building>
+      <multipleblockunit>deStateCapitolTrainMillWagon</multipleblockunit>
+      <units>
+        <unit>deMillWagon</unit>
+      </units>
+      <unitcounts>
+        <count>1</count>
+      </unitcounts>
+    </multipleblocktrain>
 	
   </civ>
   

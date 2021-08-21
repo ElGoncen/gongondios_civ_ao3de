@@ -29,7 +29,7 @@
     <anim>Heal</anim>
   </action>
  <action>
-    <name stringid="69155">Convert</name>
+    <name stringid="69155">Convert2</name>
     <type>Convert</type>
     <active>1</active>
     <maxrange>12</maxrange>
