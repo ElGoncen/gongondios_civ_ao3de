@@ -392,20 +392,16 @@
         <target type="ProtoUnit">MercNinja2</target>
       </effect>
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">MercRonin2</target>
+        <target type="ProtoUnit">ypKensei2</target>
       </effect>
-	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">MercSwissPikeman2</target>
-      </effect> 
+	   
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">ypRajput2</target>
       </effect> 
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">NatApacheCavalry</target>
+        <target type="ProtoUnit">NatApacheCavalry2</target>
       </effect>
-	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">MercMameluke2</target>
-      </effect>
+	  
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">SaloonOutlawRider2</target>
       </effect>	 
@@ -416,7 +412,7 @@
         <target type="ProtoUnit">Janissary2</target>
       </effect>
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">MercFusilier2</target>
+        <target type="ProtoUnit">deMercCannoneer2</target>
       </effect>
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">deMercAmazon2</target>
@@ -791,6 +787,9 @@
       </effect>
 	   <effect type="Data" amount="1.00" subtype="AllowedAge" relativity="Absolute">
         <target type="ProtoUnit">Bank</target>
+      </effect>
+	  <effect type="Data" amount="-2.00" subtype="AllowedAge" relativity="Absolute">
+        <target type="ProtoUnit">Capitol</target>
       </effect>
 	  
 	  	  
