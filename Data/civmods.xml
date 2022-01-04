@@ -48,6 +48,7 @@
     <townstartingunit>Gonsettler</townstartingunit>
     <townstartingunit>Gonsettler</townstartingunit>
     <townstartingunit>Cagoaltense</townstartingunit>
+	<townstartingunit>Cagoaltense</townstartingunit>
     <townstartingunit>CrateofFood</townstartingunit>
     <townstartingunit>CrateofFood</townstartingunit>
     <townstartingunit>CrateofFood</townstartingunit>
@@ -91,7 +92,16 @@
         <count>6</count>
       </unitcounts>
     </multipleblocktrain>
-	
+	<multipleblocktrain>
+      <building>Capitol</building>
+      <multipleblockunit>deStateCapitolTrainCoveredWagon</multipleblockunit>
+      <units>
+        <unit>CoveredWagon</unit>
+      </units>
+      <unitcounts>
+        <count>1</count>
+      </unitcounts>
+    </multipleblocktrain>
 	<multipleblocktrain>
       <building>Capitol</building>
       <multipleblockunit>deStateCapitolTrainTradingPostWagon</multipleblockunit>

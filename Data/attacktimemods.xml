@@ -1,0 +1,21 @@
+<attacktimemods>
+
+  
+  <unit name="Desguanzador">
+    <protoaction name="BuildingAttack">
+      <time>1.29</time>
+    </protoaction>
+    <protoaction name="DefendRangedAttack">
+      <time>0.57</time>
+    </protoaction>
+    <protoaction name="MeleeHandAttack">
+      <time>0.7762500000000001</time>
+    </protoaction>
+    <protoaction name="StaggerRangedAttack">
+      <time>0.57</time>
+    </protoaction>
+    <protoaction name="BullseyeChargeAttack">
+      <time>0.57</time>
+    </protoaction>
+  </unit>
+</attacktimemods>

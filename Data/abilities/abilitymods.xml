@@ -3,7 +3,8 @@
 <gonpriest>
     <ability>PowerConvert2<rof>60</rof></ability>
   </gonpriest>
-  <desguanzador>
-    <ability>deChargeAbilityBullsEye<tech>HCShipDesgunzadorElite</tech><bindtochargeaction>true</bindtochargeaction><forceshowrollover>true</forceshowrollover></ability>
-  </desguanzador>
+   <Desguanzador>
+    <ability>deChargeAbilityBullsEye<bindtochargeaction>true</bindtochargeaction><forceshowrollover>true</forceshowrollover></ability>
+  </Desguanzador>
+    
   </abilitymods>

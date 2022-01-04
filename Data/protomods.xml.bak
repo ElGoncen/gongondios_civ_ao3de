@@ -1129,26 +1129,25 @@
     </decay>
     <armor type="Siege" value="0.0000">
     </armor>
-  <unittype>LogicalTypeValidSabotage</unittype>
-    <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-    <unittype>LogicalTypeBuildingsNotWalls</unittype>
-    <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-    <unittype>LogicalTypeVillagersAttack</unittype>
-    <unittype>LogicalTypeHandUnitsAttack</unittype>
-    <unittype>LogicalTypeShipsAndBuildings</unittype>
-    <unittype>LogicalTypeRangedUnitsAttack</unittype>
-    <unittype>LogicalTypeBuildingsNotWallsOrGroves</unittype>
-    <unittype>LogicalTypeMinimapFilterMilitary</unittype>
-    <unittype>Building</unittype>
-    <unittype>MilitaryBuilding</unittype>
-    <unittype>BuildingClass</unittype>
-    <unittype>ConvertsHerds</unittype>
-    <unittype>AbstractCanSeeStealth</unittype>
-    <unittype>CountsTowardMilitaryScore</unittype>
-    <unittype>HasBountyValue</unittype>
-    <unittype>AbstractFort</unittype>
-    <unittype>AbstractFindFort</unittype>
-    <unittype>AbstractOutpost</unittype>
+   <unittype>LogicalTypeValidSabotage</unittype>
+  <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+  <unittype>LogicalTypeBuildingsNotWalls</unittype>
+  <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+  <unittype>LogicalTypeVillagersAttack</unittype>
+  <unittype>LogicalTypeHandUnitsAttack</unittype>
+  <unittype>LogicalTypeShipsAndBuildings</unittype>
+  <unittype>LogicalTypeRangedUnitsAttack</unittype>
+  <unittype>LogicalTypeBuildingsNotWallsOrGroves</unittype>
+  <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+  <unittype>Building</unittype>
+  <unittype>BuildingClass</unittype>
+  <unittype>MilitaryBuilding</unittype>
+  <unittype>ConvertsHerds</unittype>
+  <unittype>HasBountyValue</unittype>
+  <unittype>AbstractFort</unittype>
+  <unittype>AbstractFindFort</unittype>
+  <unittype>CountsTowardMilitaryScore</unittype>
+  <unittype>AbstractMercenaryBuilding</unittype>
       <flag>HeroName2</flag>
   <flag>CollidesWithProjectiles</flag>
   <flag>StartsAtFullEfficiency</flag>

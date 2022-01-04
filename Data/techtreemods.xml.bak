@@ -799,9 +799,7 @@
 	  <effect type="Data" amount="3.00" subtype="BuildLimit" relativity="Absolute">
         <target type="ProtoUnit">Factory</target>
       </effect>
-<effect type="Data" amount="3.00" subtype="AllowedAge" relativity="Absolute">
-        <target type="ProtoUnit">Factory</target>
-      </effect>
+
 
     </effects>
 

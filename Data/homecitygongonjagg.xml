@@ -1,7 +1,7 @@
 <homecity>
   <civ>Gongondios</civ>
-  <name>$$300008$$</name>
-  <heroname>$$300009$$</heroname>
+  <name>Parendise Quo</name>
+  <heroname>General Soplanukas</heroname>
   <gatherpointunit>HomeCityGatherFlag</gatherpointunit>
   <visual>british\british_homecity.xml</visual>
   <watervisual>british\british_homecity_water.xml</watervisual>
@@ -1619,6 +1619,36 @@
         <card dbid="2213">HCShipWoodCrates4</card>
       </cards>
     </deck>
+	<deck>
+			<name>Gongonjagg</name>
+			<cards>
+				<card dbid="3367">HCXPRanching</card>
+				<card dbid="2187">HCShipMusketeers1</card>
+				<card dbid="2316">HCMusketeerGrenadierHitpointsBritishTeam</card>
+				<card dbid="2035">HCMedicine</card>
+				<card dbid="3349">HCXPShipSurgeons2</card>
+				<card dbid="2572">HCShipFoodCrates1</card>
+				<card dbid="2573">HCShipWoodCrates1</card>
+				<card dbid="2574">HCShipCoinCrates1</card>
+				<card dbid="814">HCUnlockFort</card>
+				<card dbid="2041">HCRefrigeration</card>
+				<card dbid="2093">HCRoyalMint</card>
+				<card dbid="3382">HCXPAdvancedBalloon</card>
+				<card dbid="2611">HCMonitorCombatTeam</card>
+				<card dbid="1688">HCHeavyFortifications</card>
+				<card dbid="1957">HCAdvancedArsenal</card>
+				<card dbid="2043">HCSilversmith</card>
+				<card dbid="9010">HCShipDesgunzadorElite</card>
+				<card dbid="2318">HCShipHussars4</card>
+				<card dbid="9008">HCShipGonSettlers1</card>
+				<card dbid="9011">HCShipBuildsx2</card>
+				<card dbid="9018">HCXPRanchingsangacebu</card>
+				<card dbid="3368">HCXPRanchingLlama</card>
+				<card dbid="7197">DEHCAdvancedSaloon</card>
+				<card dbid="3438">HCXPCapitalism</card>
+				<card dbid="3440">HCXPDistributivism</card>
+			</cards>
+		</deck>
     <revoltdeck>
       <name>$$45518$$</name>
       <cards>

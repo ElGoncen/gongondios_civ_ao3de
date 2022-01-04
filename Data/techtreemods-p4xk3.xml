@@ -364,8 +364,9 @@
 	  
 	  <effect type="TechStatus" status="obtainable">DETavernFolkHeroes</effect>
 	  
-	  
-	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+	
+	 
+	 <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">deChinaco</target>
 		      </effect>
 	<effect type="CommandRemove" proto="deChinaco">
@@ -379,15 +380,7 @@
       </effect>
       <effect type="SetName" proto="deChinaco" culture="none" newname="112052">
       </effect>
-	  
-	  
-		 
-	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-        <target type="ProtoUnit">deSaloonCowboy2</target>
-      </effect>
-	  
-	  	  
-	  
+		  
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">MercNinja2</target>
       </effect>
@@ -404,7 +397,13 @@
 	  
 	  <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">SaloonOutlawRider2</target>
-      </effect>	 
+      </effect>
+
+<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">deSaloonCowboy2</target>
+      </effect>
+
+	  
 <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">SPCHoopThrowers2</target>
       </effect>
@@ -653,7 +652,7 @@
         <target type="Player">
         </target>
       </effect>
-	  <effect type="Data" amount="1.00" subtype="FreeHomeCityUnit" unittype="cagoaltense" relativity="Absolute">
+	  <effect type="Data" amount="1.00" subtype="FreeHomeCityUnit" unittype="Cagoaltense" relativity="Absolute">
         <target type="Player">
         </target>
       </effect>
@@ -720,32 +719,34 @@
     <icon>resources\images\icons\techs\desgunzador_elite.png</icon>
     <flag>HomeCity</flag>
     <effects>
-       
-      <effect type="Data" amount="1.40" subtype="Damage" allactions="1" relativity="BasePercent">
+       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Desguanzador</target>
+      </effect>
+      
+       <effect type="Data" amount="10.00" subtype="BuildLimit" relativity="Absolute">
         <target type="ProtoUnit">Desguanzador</target>
       </effect>
       <effect type="SetName" proto="Desguanzador" culture="none" newname="300022">
       </effect>
-     
-      <effect type="Data" amount="1.40" subtype="Hitpoints" relativity="BasePercent">
+      <effect type="Data" action="BullseyeChargeAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Desguanzador</target>
       </effect>
-     
-	  <effect type="Data" amount="5.00" subtype="BuildLimit" relativity="Absolute">
-        <target type="ProtoUnit">Desguanzador</target>
-      </effect>
-	   <effect type="Data" action="BullseyeChargeAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-        <target type="ProtoUnit">Desguanzador</target>
-      </effect>
-      <effect type="Data" amount="6.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">Desguanzador</target>
-	  </effect>
-	  
+      
     </effects>
    
   </tech>  
   
-    
+    <tech name="DesguanzadorAbilityShadow" type="Normal">
+    <dbid>7324</dbid>
+    <researchpoints>0.0000</researchpoints>
+    <status>OBTAINABLE</status>
+    <flag>Shadow</flag>
+    <flag>OrPrereqs</flag>
+    <prereqs>
+      <techstatus status="active">HCShipDesgunzadorElite</techstatus>
+      
+    </prereqs>
+  </tech>
   
   <tech name="HCShipBuildsx2" type="Normal">
     <dbid>9011</dbid>
@@ -799,9 +800,7 @@
 	  <effect type="Data" amount="3.00" subtype="BuildLimit" relativity="Absolute">
         <target type="ProtoUnit">Factory</target>
       </effect>
-<effect type="Data" amount="3.00" subtype="AllowedAge" relativity="Absolute">
-        <target type="ProtoUnit">Factory</target>
-      </effect>
+     
 
     </effects>
 
