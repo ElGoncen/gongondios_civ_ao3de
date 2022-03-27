@@ -72,6 +72,9 @@
     <train row="0" page="6" column="6">deBlockhouse</train>
     <train row="0" page="6" column="11">ypWarAcademy</train>
 	<train row="0" page="6" column="14">ypConsulate</train>
+	<train row="0" page="0" column="15">WallConnectorMar</train>
+  <train row="0" page="255" column="1">WallStraight2Mar</train>
+  <train row="0" page="255" column="1">WallStraight5Mar</train>
 
     <flag>CollidesWithProjectiles</flag>
     <flag>ApplyHandicapTraining</flag>
@@ -1129,25 +1132,26 @@
     </decay>
     <armor type="Siege" value="0.0000">
     </armor>
-   <unittype>LogicalTypeValidSabotage</unittype>
-  <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-  <unittype>LogicalTypeBuildingsNotWalls</unittype>
-  <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-  <unittype>LogicalTypeVillagersAttack</unittype>
-  <unittype>LogicalTypeHandUnitsAttack</unittype>
-  <unittype>LogicalTypeShipsAndBuildings</unittype>
-  <unittype>LogicalTypeRangedUnitsAttack</unittype>
-  <unittype>LogicalTypeBuildingsNotWallsOrGroves</unittype>
-  <unittype>LogicalTypeMinimapFilterMilitary</unittype>
-  <unittype>Building</unittype>
-  <unittype>BuildingClass</unittype>
-  <unittype>MilitaryBuilding</unittype>
-  <unittype>ConvertsHerds</unittype>
-  <unittype>HasBountyValue</unittype>
-  <unittype>AbstractFort</unittype>
-  <unittype>AbstractFindFort</unittype>
-  <unittype>CountsTowardMilitaryScore</unittype>
-  <unittype>AbstractMercenaryBuilding</unittype>
+  <unittype>LogicalTypeValidSabotage</unittype>
+    <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+    <unittype>LogicalTypeBuildingsNotWalls</unittype>
+    <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+    <unittype>LogicalTypeVillagersAttack</unittype>
+    <unittype>LogicalTypeHandUnitsAttack</unittype>
+    <unittype>LogicalTypeShipsAndBuildings</unittype>
+    <unittype>LogicalTypeRangedUnitsAttack</unittype>
+    <unittype>LogicalTypeBuildingsNotWallsOrGroves</unittype>
+    <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+    <unittype>Building</unittype>
+    <unittype>MilitaryBuilding</unittype>
+    <unittype>BuildingClass</unittype>
+    <unittype>ConvertsHerds</unittype>
+    <unittype>AbstractCanSeeStealth</unittype>
+    <unittype>CountsTowardMilitaryScore</unittype>
+    <unittype>HasBountyValue</unittype>
+    <unittype>AbstractFort</unittype>
+    <unittype>AbstractFindFort</unittype>
+    <unittype>AbstractOutpost</unittype>
       <flag>HeroName2</flag>
   <flag>CollidesWithProjectiles</flag>
   <flag>StartsAtFullEfficiency</flag>
@@ -3023,6 +3027,366 @@
 <unit id="813" name="Saloon">
 
 <tech row="0" page="1" column="2">DETavernFolkHeroes</tech>
+</unit>
+
+
+<unit id="3000" name="WallConnectorMar">
+    <dbid>3000</dbid>
+    <displaynameid>300038</displaynameid>
+    <editornameid>300039</editornameid>
+    <obstructionradiusx>1.0000</obstructionradiusx>
+    <obstructionradiusz>1.0000</obstructionradiusz>
+    <maxvelocity>0.0000</maxvelocity>
+    <movementtype>water</movementtype>
+    <animfile>buildings\wall\wall_tower.xml</animfile>
+    <impacttype>Stone</impacttype>
+    <physicsinfo>house</physicsinfo>
+    <placementfile>wallM.xml</placementfile>
+    <icon>resources\art\buildings\wall\wall_icon_64x64.png</icon>
+    <portraiticon>resources\art\buildings\wall\wall_portrait.png</portraiticon>
+    <rollovertextid>34893</rollovertextid>
+    <shortrollovertextid>34892</shortrollovertextid>
+    <initialhitpoints>1500.0000</initialhitpoints>
+    <maxhitpoints>1500.0000</maxhitpoints>
+    <los>1.0000</los>
+    <projectileprotounit>Arrow</projectileprotounit>
+    <buildpoints>2.0000</buildpoints>
+    <cost resourcetype="Wood">5.0000</cost>
+    <cost resourcetype="Gold">0.0000</cost>
+    <buildingworkrate>1.0000</buildingworkrate>
+    <allowedage>0</allowedage>
+    <decay delay="0.0000" duration="0.0000">
+    </decay>
+    <armor type="Siege" value="0.0000">
+    </armor>
+    <unittype>LogicalTypeValidSabotage</unittype>
+    <unittype>LogicalTypeVillagersAttack</unittype>
+    <unittype>LogicalTypeHandUnitsAttack</unittype>
+    <unittype>LogicalTypeShipsAndBuildings</unittype>
+    <unittype>LogicalTypeRangedUnitsAttack</unittype>
+    <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+    <unittype>BuildingClass</unittype>
+    <unittype>AbstractWall</unittype>
+    <unittype>MilitaryBuilding</unittype>
+    <unittype>ColonyBuilding</unittype>
+    <unittype>Building</unittype>
+    <unittype>CountsTowardMilitaryScore</unittype>
+    <unittype>HasBountyValue</unittype>
+    <tech row="0" page="1" column="0">Bastion</tech>
+    <tech row="0" page="1" column="0">DERedoubts</tech>
+    <tech row="0" page="1" column="0">DECityFortifications</tech>
+    <flag>CollidesWithProjectiles</flag>
+    <flag>StartsAtFullEfficiency</flag>
+    <flag>Immoveable</flag>
+    <flag>NoBloodOnDeath</flag>
+    <flag>ObscuresUnits</flag>
+    <flag>NonAutoFormedUnit</flag>
+    <flag>Doppled</flag>
+    <flag>SelectWithObstruction</flag>
+    <flag>PaintTextureWhenPlacing</flag>
+    <flag>FlattenGround</flag>
+    <flag>ColonyBuilding</flag>
+    <flag>wallBuild</flag>
+    <flag>Tracked</flag>
+	<flag>TieToWaterSurface</flag>
+    <command page="10" column="7">Delete</command>
+    <tactics>wallM.tactics</tactics>
+</unit>
+
+<unit id="3001" name="WallStraight2Mar">
+  <dbid>3001</dbid>
+  <displaynameid>300040</displaynameid>
+  <editornameid>300041</editornameid>
+  <obstructionradiusx>2.0000</obstructionradiusx>
+  <obstructionradiusz>1.0000</obstructionradiusz>
+  <maxvelocity>0.0000</maxvelocity>
+  <movementtype>water</movementtype>
+  <animfile>buildings\wall\wall_1x2.xml</animfile>
+  <impacttype>Stone</impacttype>
+  <physicsinfo>house</physicsinfo>
+  <placementfile>wallM.xml</placementfile>
+  <icon>resources\art\buildings\wall\wall_icon_64x64.png</icon>
+  <portraiticon>resources\art\buildings\wall\wall_portrait.png</portraiticon>
+  <rollovertextid>25379</rollovertextid>
+  <shortrollovertextid>25742</shortrollovertextid>
+  <initialhitpoints>1500</initialhitpoints>
+  <maxhitpoints>1500</maxhitpoints>
+  <los>1</los>
+  <buildpoints>5.0000</buildpoints>
+  <cost resourcetype="Wood">5</cost>
+  <buildingworkrate>1.0000</buildingworkrate>
+  <allowedage>0</allowedage>
+  <decay delay="0.0000" duration="0.0000"/>
+  <armor type="Siege" value="0.0000"/>
+  <unittype>LogicalTypeValidSabotage</unittype>
+  <unittype>LogicalTypeVillagersAttack</unittype>
+  <unittype>LogicalTypeHandUnitsAttack</unittype>
+  <unittype>LogicalTypeShipsAndBuildings</unittype>
+  <unittype>LogicalTypeRangedUnitsAttack</unittype>
+  <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+  <unittype>Building</unittype>
+  <unittype>BuildingClass</unittype>
+  <unittype>MilitaryBuilding</unittype>
+  <unittype>AbstractWall</unittype>
+  <unittype>ColonyBuilding</unittype>
+  <tech row="0" page="1" column="0">Bastion</tech>
+  <tech row="0" page="1" column="0">DERedoubts</tech>
+  <tech row="0" page="1" column="0">DECityFortifications</tech>
+  <flag>FlattenGround</flag>
+  <flag>SelectWithObstruction</flag>
+  <flag>Doppled</flag>
+  <flag>CollidesWithProjectiles</flag>
+  <flag>Immoveable</flag>
+  <flag>NoBloodOnDeath</flag>
+  <flag>NonAutoFormedUnit</flag>
+  <flag>wallBuild</flag>
+  <flag>NeverShowButton</flag>
+  <flag>UseAlignedObstructionOnMinimap</flag>
+  <flag>NoIdleActions</flag>
+  <flag>TileAlignPlacement</flag>
+  <flag>ColonyBuilding</flag>
+  <flag>ObscuresUnits</flag>
+  <flag>Tracked</flag>
+  <flag>TieToWaterSurface</flag>
+  <command page="10" column="7">Delete</command>
+  <tactics>wall.tactics</tactics>
+</unit>
+
+<unit id="3002" name="WallStraight5Mar">
+  <dbid>3002</dbid>
+  <displaynameid>300042</displaynameid>
+  <editornameid>300043</editornameid>
+  <obstructionradiusx>5.0000</obstructionradiusx>
+  <obstructionradiusz>1.0000</obstructionradiusz>
+  <maxvelocity>0.0000</maxvelocity>
+  <movementtype>water</movementtype>
+  <animfile>buildings\wall\wall_1x5.xml</animfile>
+  <impacttype>Stone</impacttype>
+  <physicsinfo>house</physicsinfo>
+  <placementfile>wallM.xml</placementfile>
+  <icon>resources\art\buildings\wall\wall_icon_64x64.png</icon>
+  <portraiticon>resources\art\buildings\wall\wall_portrait.png</portraiticon>
+  <rollovertextid>24926</rollovertextid>
+  <shortrollovertextid>25745</shortrollovertextid>
+  <initialhitpoints>1500</initialhitpoints>
+  <maxhitpoints>1500</maxhitpoints>
+  <los>1</los>
+  <buildpoints>5.0000</buildpoints>
+  <cost resourcetype="Wood">5</cost>
+  <buildingworkrate>1.0000</buildingworkrate>
+  <allowedage>0</allowedage>
+  <decay delay="0.0000" duration="0.0000"/>
+  <armor type="Siege" value="0.0000"/>
+  <unittype>LogicalTypeValidSabotage</unittype>
+  <unittype>LogicalTypeVillagersAttack</unittype>
+  <unittype>LogicalTypeHandUnitsAttack</unittype>
+  <unittype>LogicalTypeShipsAndBuildings</unittype>
+  <unittype>LogicalTypeRangedUnitsAttack</unittype>
+  <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+  <unittype>BuildingClass</unittype>
+  <unittype>MilitaryBuilding</unittype>
+  <unittype>AbstractWall</unittype>
+  <unittype>ColonyBuilding</unittype>
+  <unittype>Building</unittype>
+  <tech row="0" page="1" column="0">Bastion</tech>
+  <tech row="0" page="1" column="0">DERedoubts</tech>
+  <tech row="0" page="1" column="0">DECityFortifications</tech>
+  <flag>SelectWithObstruction</flag>
+  <flag>Doppled</flag>
+  <flag>CollidesWithProjectiles</flag>
+  <flag>Immoveable</flag>
+  <flag>NoBloodOnDeath</flag>
+  <flag>NonAutoFormedUnit</flag>
+  <flag>wallBuild</flag>
+  <flag>NeverShowButton</flag>
+  <flag>UseAlignedObstructionOnMinimap</flag>
+  <flag>NoIdleActions</flag>
+  <flag>TileAlignPlacement</flag>
+  <flag>ColonyBuilding</flag>
+  <flag>ObscuresUnits</flag>
+  <flag>FlattenGround</flag>
+  <flag>Tracked</flag>
+  <flag>TieToWaterSurface</flag>
+  <command page="6" column="0">Transform</command>
+  <command page="10" column="7">Delete</command>
+  <tactics>wallM.tactics</tactics>
+</unit>
+
+
+<unit id="3003" name="CWallGateMar">
+    <dbid>3003</dbid>
+    <displaynameid>300044</displaynameid>
+    <obstructionradiusx>5.0000</obstructionradiusx>
+    <obstructionradiusz>1.0000</obstructionradiusz>
+    <maxvelocity>0.0000</maxvelocity>
+    <movementtype>water</movementtype>
+    <animfile>buildings\wall\wall_gate.xml</animfile>
+    <allowedheightvariance>4.0000</allowedheightvariance>
+    <impacttype>Stone</impacttype>
+    <physicsinfo>house</physicsinfo>
+    <icon>resources\art\buildings\wall\wall_portrait.png</icon>
+    <portraiticon>resources\art\buildings\wall\gate_portrait.png</portraiticon>
+    <rollovertextid>29633</rollovertextid>
+    <shortrollovertextid>29632</shortrollovertextid>
+    <initialhitpoints>1500.0000</initialhitpoints>
+    <maxhitpoints>1500.0000</maxhitpoints>
+    <los>1.0000</los>
+    <buildpoints>15.0000</buildpoints>
+    <cost resourcetype="Wood">50.0000</cost>
+    <buildingworkrate>1.0000</buildingworkrate>
+    <allowedage>0</allowedage>
+    <decay delay="0.0000" duration="0.0000">
+    </decay>
+    <armor type="Siege" value="0.0000">
+    </armor>
+    <unittype>LogicalTypeValidSabotage</unittype>
+    <unittype>LogicalTypeVillagersAttack</unittype>
+    <unittype>LogicalTypeHandUnitsAttack</unittype>
+    <unittype>LogicalTypeShipsAndBuildings</unittype>
+    <unittype>LogicalTypeRangedUnitsAttack</unittype>
+    <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+    <unittype>BuildingClass</unittype>
+    <unittype>ColonyBuilding</unittype>
+    <unittype>AbstractWall</unittype>
+    <unittype>MilitaryBuilding</unittype>
+    <unittype>Building</unittype>
+    <unittype>CountsTowardMilitaryScore</unittype>
+    <unittype>HasBountyValue</unittype>
+    <flag>CollidesWithProjectiles</flag>
+    <flag>Doppled</flag>
+    <flag>Immoveable</flag>
+    <flag>NoBloodOnDeath</flag>
+    <flag>NonAutoFormedUnit</flag>
+    <flag>ObscuresUnits</flag>
+    <flag>PlayerOwnsObstruction</flag>
+    <flag>SelectWithObstruction</flag>
+    <flag>UseAlignedObstructionOnMinimap</flag>
+    <flag>wallBuild</flag>
+    <flag>ColonyBuilding</flag>
+    <flag>Tracked</flag>
+	<flag>TieToWaterSurface</flag>
+    <command page="10" column="7">Delete</command>
+    <tactics>gate.tactics</tactics>
+  </unit>
+
+<unit id="3004" name="MakeBoat">
+  <dbid>3004</dbid>
+  <displaynameid>300045</displaynameid>
+  <editornameid>300046</editornameid>
+  <populationcount>1</populationcount>
+  <obstructionradiusx>0.9900</obstructionradiusx>
+  <obstructionradiusz>0.9900</obstructionradiusz>
+  <formationcategory>Protected</formationcategory>
+  <maxvelocity>4.0000</maxvelocity>
+  <maxrunvelocity>6.0000</maxrunvelocity>
+  <movementtype>water</movementtype>
+  <turnrate>6.0000</turnrate>
+  <animfile>units\naval\fishing_ship\fishing_ship.xml</animfile>
+  <impacttype>Wood</impacttype>
+  <physicsinfo>house</physicsinfo>
+  <icon>resources\art\units\naval\fishing_ship\fishing_ship_icon_64x64.png</icon>
+  <portraiticon>resources\art\units\naval\fishing_ship\fishing_ship_icon_portrait.png</portraiticon>
+  <rollovertextid>22961</rollovertextid>
+  <shortrollovertextid>25636</shortrollovertextid>
+  <initialhitpoints>200</initialhitpoints>
+  <maxhitpoints>200</maxhitpoints>
+  <los>18</los>
+  <unitaitype>Civilian</unitaitype>
+  <trainpoints>25</trainpoints>
+  <buildlimit>99</buildlimit>
+  <bounty>8</bounty>
+  <buildbounty>8</buildbounty>
+  <cost resourcetype="Wood">70</cost>
+  <carrycapacity resourcetype="Food">1.0000</carrycapacity>
+  <carrycapacity resourcetype="Gold">1.0000</carrycapacity>
+  <maxcontained>10</maxcontained>
+  <allowedage>0</allowedage>
+  <armor type="Ranged" value="0.5000"/>
+  <unittype>LogicalTypeValidSabotage</unittype>
+  <unittype>LogicalTypeMinimapFilterEconomic</unittype>
+  <unittype>LogicalTypeEasySelectAvoid</unittype>
+  <unittype>LogicalTypeNeededForVictory</unittype>
+  <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+  <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+  <unittype>LogicalTypeAffectedByTownBell</unittype>
+  <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+  <unittype>LogicalTypeVillagersAttack</unittype>
+  <unittype>LogicalTypeHandUnitsAttack</unittype>
+  <unittype>LogicalTypeShipsAndBuildings</unittype>
+  <unittype>LogicalTypeRangedUnitsAttack</unittype>
+  <unittype>Ship</unittype>
+  <unittype>Transport</unittype>
+  <unittype>Economic</unittype>
+  <unittype>EconomicUnit</unittype>
+  <unittype>AbstractVillager</unittype>
+  <unittype>UnitClass</unittype>
+  <unittype>Unit</unittype>
+  <unittype>HasBountyValue</unittype>
+  <unittype>CountsTowardEconomicScore</unittype>
+  <unittype>ValidIdleVillager</unittype>
+  <unittype>AbstractFishingBoat</unittype>
+  <flag>TieToWaterSurface</flag>
+  <flag>CollidesWithProjectiles</flag>
+  <flag>DontRotateObstruction</flag>
+  <flag>ApplyHandicapTraining</flag>
+  <flag>NavalUnit</flag>
+  <flag>DecalStickToWaterSurface</flag>
+  <flag>NoFadeOnDeath</flag>
+  <flag>FadeOutDecalOnDeath</flag>
+  <flag>AllowAutoGarrison</flag>
+  <flag>ObscuredByUnits</flag>
+  <flag>NoBloodOnDeath</flag>
+  <flag>Tracked</flag>
+  <contain>LogicalTypeGarrisonInShips</contain>
+  <train row="0" page="0" column="1">WallConnectorMar</train>
+  <train row="0" page="255" column="1">WallStraight2Mar</train>
+  <train row="0" page="255" column="1">WallStraight5Mar</train>
+  <command page="10" column="5">Eject</command>
+  <command page="10" column="1">Stop</command>
+  <command page="10" column="7">Delete</command>
+  <tactics>fishingboat.tactics</tactics>
+  <protoaction>
+    <name>BuildingAttack</name>
+    <damage>15.000000</damage>
+    <damagetype>Siege</damagetype>
+    <maxrange>20.000000</maxrange>
+    <rof>2.000000</rof>
+  </protoaction>
+  <protoaction>
+    <name>BuildingAttack2</name>
+    <damage>15.000000</damage>
+    <damagetype>Siege</damagetype>
+    <minrange>0.000000</minrange>
+    <maxrange>20.000000</maxrange>
+    <rof>2.000000</rof>
+  </protoaction>
+  <protoaction>
+    <name>Gather</name>
+    <rate type="AbstractWhale">0.500000</rate>
+    <rate type="AbstractFish">0.670000</rate>
+  </protoaction>
+  <protoaction>
+    <name>RangedAttack</name>
+    <damage>8.000000</damage>
+    <damagetype>Ranged</damagetype>
+    <maxrange>20.000000</maxrange>
+    <rof>2.000000</rof>
+    <damagecap>16.000000</damagecap>
+    <projectile>ArrowCanoe</projectile>
+    <damagebonus type="AbstractVillager">0.500000</damagebonus>
+  </protoaction>
+  <protoaction>
+    <name>RangedAttack2</name>
+    <damage>8.000000</damage>
+    <damagetype>Ranged</damagetype>
+    <minrange>0.000000</minrange>
+    <maxrange>20.000000</maxrange>
+    <rof>2.000000</rof>
+    <damagecap>16.000000</damagecap>
+    <projectile>InvisibleProjectile</projectile>
+    <damagebonus type="AbstractVillager">0.500000</damagebonus>
+  </protoaction>
+  
 </unit>
 
 </protomods>

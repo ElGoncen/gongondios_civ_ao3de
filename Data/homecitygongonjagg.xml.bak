@@ -1,7 +1,7 @@
 <homecity>
   <civ>Gongondios</civ>
-  <name>Parendise quo</name>
-  <heroname>Marino Pelmazo</heroname>
+  <name>$$300008$$</name>
+  <heroname>$$300009$$</heroname>
   <gatherpointunit>HomeCityGatherFlag</gatherpointunit>
   <visual>revolution\revolution_homecity.xml</visual>
   <watervisual>revolution\revolution_homecity_water.xml</watervisual>
